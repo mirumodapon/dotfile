@@ -1,0 +1,6 @@
+[submodule ".config/delta/themes/catppuccin"]
+	path = .config/delta/themes/catppuccin
+	url = git@github.com:catppuccin/delta.git
+[submodule ".config/nvim"]
+	path = nvim
+	url = git@github.com:mirumodapon/neovim-config.git

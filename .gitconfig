@@ -1,0 +1,30 @@
+[core]
+    pager=delta
+    editor=nvim
+[init]
+    defaultBranch=main
+[include]
+	  path = ~/.config/delta/themes/catppuccin/catppuccin.gitconfig
+[user]
+    name=
+    email=
+    signingkey=
+[commit]
+    gpgsign = true
+[pager]
+    branch=false
+    tag=false
+[merge]
+    conflictstyle=diff3
+[diff]
+    colorMoved=default
+[delta]
+    navigate=true
+    side-by-side=true
+    features = catppuccin-mocha
+[alias]
+    alg=log --color --graph --all --pretty=format:'%Cred%h%Creset - %s%C(yellow)%d%Creset <%C(blue)%an%Creset> %C(green)%cr%Creset.' --abbrev-commit --
+    lg=log --color --graph --pretty=format:'%Cred%h%Creset - %s%C(yellow)%d%Creset <%C(blue)%an%Creset> %C(green)%cr%Creset.' --abbrev-commit --
+    st=status
+    co=commit
+    ck=checkout
