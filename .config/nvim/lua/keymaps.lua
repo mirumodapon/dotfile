@@ -23,7 +23,7 @@ keymap.set('n', '<leader>Q', '<cmd>q!<CR>', { desc = 'Force close file even unsa
 keymap.set('n', '<leader>wr', '<cmd>SessionRestore<CR>', { desc = 'Restore saving session' })
 keymap.set('n', '<leader>ws', '<cmd>SessionSave<CR>', { desc = 'Save ssession' })
 
-keymap.set('n', '<leader> e', '<cmd>Trouble diagnostics toggle<CR>', { desc = 'Open trouble workspace diagnostics' })
-keymap.set('n', '<leader> t', '<cmd>Open todos in trouble<CR>', { desc = 'Open todos in trouble' })
+-- keymap.set('n', '<leader> e', '<cmd>Trouble diagnostics toggle<CR>', { desc = 'Open trouble workspace diagnostics' })
+-- keymap.set('n', '<leader> t', '<cmd>Open todos in trouble<CR>', { desc = 'Open todos in trouble' })
 
 vim.keymap.set('n', '<leader>gg', '<cmd>Neogit<CR>', { desc = 'Open git control pane' })
