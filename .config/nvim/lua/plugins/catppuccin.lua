@@ -9,10 +9,12 @@ return {
     },
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'catppuccin'
-
+      require("catppuccin").setup({
+        transparent_background = true
+      })
       require('lualine').setup({ options = { theme = 'auto' } })
       require('barbecue').setup { theme =  'catppuccinn' }
 
+      vim.cmd.colorscheme 'catppuccin'
     end
 }

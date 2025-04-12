@@ -5,7 +5,8 @@ return {
   opts = {
     options = {
       mode = "tabs",
-      separator_style = "slant",
+      numbers = "ordined",
+      separator_style = "thin",
       diagnostics = 'nvim_lsp',
       offsets = {
         {
