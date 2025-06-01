@@ -23,6 +23,7 @@ opt.mouse = 'a'
 opt.splitright = true
 vim.diagnostic.config({ virtual_text = true })
 
--- clipborad
+-- clipboard
 opt.clipboard:append('unnamedplus')
 
+vim.cmd('filetype plugin on')
