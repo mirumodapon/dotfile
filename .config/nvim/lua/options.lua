@@ -26,4 +26,4 @@ vim.diagnostic.config({ virtual_text = true })
 -- clipboard
 opt.clipboard:append('unnamedplus')
 
-vim.cmd('filetype plugin on')
+-- vim.cmd('filetype plugin on')

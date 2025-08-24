@@ -6,6 +6,7 @@ return {
       formatters_by_ft = {
         rust = { 'rustfmt' },
         go = { 'gofmt' },
+        vue = { 'eslint_d' },
       }
     })
 
