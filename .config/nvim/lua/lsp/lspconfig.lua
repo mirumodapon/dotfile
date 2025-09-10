@@ -49,6 +49,12 @@ return {
             filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'svelte', 'vue' },
           })
         end,
+        ['tailwindcss'] = function()
+          lspconfig['tailwindcss'].setup({
+            capabilities = capabilities,
+            filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'svelte', 'vue' },
+          })
+        end
       })
     end
   end,
