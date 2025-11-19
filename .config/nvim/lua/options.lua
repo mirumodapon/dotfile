@@ -27,3 +27,5 @@ vim.diagnostic.config({ virtual_text = true })
 opt.clipboard:append('unnamedplus')
 
 -- vim.cmd('filetype plugin on')
+
+opt.foldenable = false
