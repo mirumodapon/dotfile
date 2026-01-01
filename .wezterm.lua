@@ -24,13 +24,18 @@ config.keys = {
   },
   {
     key = 'f',
-    mods = 'META',
+    mods = 'META | SHIFT',
     action = wezterm.action.ToggleFullScreen,
   },
   {
     key = 't',
-    mods = 'META',
+    mods = 'META | SHIFT',
     action = wezterm.action.ToggleAlwaysOnTop,
+  },
+  {
+    key = 'b',
+    mods = 'META | SHIFT',
+    action = wezterm.action.ToggleAlwaysOnBottom,
   },
   {
     key = '"',
