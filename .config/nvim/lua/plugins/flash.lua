@@ -7,7 +7,7 @@ return {
         enabled = false
       },
       char = {
-        jump_labels = true
+        enabled = false
       }
     }
   },
