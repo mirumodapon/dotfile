@@ -1,3 +1,3 @@
-require('options')
-require('keymaps')
-require('lazy-nvim')
+require('config.options')
+require('config.keymaps')
+require('config.lazy')
