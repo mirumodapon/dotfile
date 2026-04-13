@@ -71,6 +71,7 @@ return {
       local mason = require('mason')
       local mason_lspconfig = require('mason-lspconfig')
       local mason_tool_installer = require('mason-tool-installer')
+      local lspconfig = require("lspconfig")
 
       mason.setup({
         ui = {
@@ -86,7 +87,15 @@ return {
         ensure_installed = {},
       })
 
-      mason_lspconfig.setup()
+      mason_lspconfig.setup({
+        ensure_installed = {
+          "vtsls",
+          "vue_ls",
+        },
+      })
+
+      lspconfig.vtsls.setup({})
+      lspconfig.vue_ls.setup({})
     end
   }
 }
