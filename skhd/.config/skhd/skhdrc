@@ -1,0 +1,20 @@
+:: default
+:: yabai @
+
+alt - r : skhd --reload
+alt - w ; yabai
+
+yabai < escape ; default
+yabai < ctrl - c ; default
+
+yabai < h : yabai -m window --focus west
+yabai < j : yabai -m window --focus south
+yabai < k : yabai -m window --focus north
+yabai < l : yabai -m window --focus east
+
+yabai < cmd - h : yabai -m window --move rel:-50:0 || yabai -m window --swap west || yabai -m window --warp last
+yabai < cmd - l : yabai -m window --move rel:50:0  || yabai -m window --swap east || yabai -m window --warp first
+yabai < cmd - j : yabai -m window --move rel:0:50   || yabai -m window --swap south || yabai -m window --warp first
+yabai < cmd - k : yabai -m window --move rel:0:-50  || yabai -m window --swap north || yabai -m window --warp last
+
+yabai < space : yabai -m window --toggle float
