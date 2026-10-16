@@ -1,8 +1,10 @@
 :: default
 :: yabai @
 
+#
+
 alt - r : skhd --reload
-alt - w ; yabai
+alt - y ; yabai
 
 yabai < escape ; default
 yabai < ctrl - c ; default
@@ -12,9 +14,16 @@ yabai < j : yabai -m window --focus south
 yabai < k : yabai -m window --focus north
 yabai < l : yabai -m window --focus east
 
-yabai < cmd - h : yabai -m window --move rel:-50:0 || yabai -m window --swap west || yabai -m window --warp last
-yabai < cmd - l : yabai -m window --move rel:50:0  || yabai -m window --swap east || yabai -m window --warp first
-yabai < cmd - j : yabai -m window --move rel:0:50   || yabai -m window --swap south || yabai -m window --warp first
-yabai < cmd - k : yabai -m window --move rel:0:-50  || yabai -m window --swap north || yabai -m window --warp last
+yabai < alt - h : yabai -m window --move rel:-50:0 || yabai -m window --swap west || yabai -m window --warp last
+yabai < alt - l : yabai -m window --move rel:50:0  || yabai -m window --swap east || yabai -m window --warp first
+yabai < alt - j : yabai -m window --move rel:0:50   || yabai -m window --swap south || yabai -m window --warp first
+yabai < alt - k : yabai -m window --move rel:0:-50  || yabai -m window --swap north || yabai -m window --warp last
+
+yabai < alt - 1 : yabai -m display --focus 1
+yabai < alt - 2 : yabai -m display --focus 2
+yabai < alt - 3 : yabai -m display --focus 3
+
+yabai < s : yabai -m space --rotate 90
+yabai < shift - s : yabai -m space --rotate 180
 
 yabai < space : yabai -m window --toggle float
