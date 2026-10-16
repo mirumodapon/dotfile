@@ -89,13 +89,8 @@ return {
 
       mason_lspconfig.setup({
         ensure_installed = {
-          "vtsls",
-          "vue_ls",
         },
       })
-
-      lspconfig.vtsls.setup({})
-      lspconfig.vue_ls.setup({})
     end
   }
 }

@@ -91,6 +91,10 @@ return {
           rust = { 'rustfmt' },
           go = { 'gofmt' },
           vue = { 'eslint_d' },
+          javascript = { 'eslint_d', 'oxfmt' },
+          typescript = { 'eslint_d', 'oxfmt' },
+          cpp = { 'clang_format', 'clangd' },
+          -- sql = { 'sqruff' }
         }
       })
     end,
@@ -159,12 +163,13 @@ return {
   },
   {
     'folke/todo-comments.nvim',
+    event = { 'BufReadPost' },
     dependencies = { 'nvim-lua/plenary.nvim' },
+    opts = {},
     keys = {
       { ']t', mode = { 'n' }, function() require('todo-comments').jump_next() end, { desc = 'Next todo comment' } },
       { '[t', mode = { 'n' }, function() require('todo-comments').jump_prev() end, { desc = 'Previous todo comment' } },
     },
-    config = true
   },
   {
     'nvim-treesitter/nvim-treesitter',
